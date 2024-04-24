@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E-commerce Company</title>
+  <style>
+    body {
+      background-color: #f1f1f1;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #ff6347;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+    #home, #product, #form {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+    }
+    #home:hover, #product:hover, #form:hover {
+      background-color: #fff;
+      color: #ff6347;
+    }
+    .product {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      margin: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .product-image {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      border-radius: 10px;
+    }
+    .product-description {
+      flex: 1;
+      margin-left: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    form {
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .form-header {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button id="home">Home</button>
+    <button id="product">Product</button>
+    <button id="form">Form</button>
+  </header>
+  <div class="product">
+    <div class="product-image"></div>
+    <div class="product-description">
+      <h2>Product Name</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+  <footer>
+    &copy; 2022 E-commerce Company
+  </footer>
+  <form>
+    <h2 class="form-header">Contact Us</h2>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button>Submit</button>
+  </form>
+  <script>
+    document.getElementById('home').addEventListener('click', () => {
+      alert('You clicked Home button!');
+    });
+    document.getElementById('product').addEventListener('click', () => {
+      alert('You clicked Product button!');
+    });
+    document.getElementById('form').addEventListener('click', () => {
+      alert('You clicked Form button!');
+    });
+  </script>
+</body>
+</html>
